@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+    <style>
+      label {
+        display: block
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="GET">
+        <!-- Anagraphic -->
+        <fieldset>
+          <legend>
+            <h2>User Data</h2>
+          </legend>
+          <label for="email-user">Email</label>
+          <input type="email" id="email" name="email" placeholder="develhoper@lmao.com"/>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Pls not your_name1234">
+          <label for="name-surname">Name And Surname</label>
+          <input type="text" name="name-surname" id="name-surname" placeholder="Devel Hope" />
+          <label for="birth">Date Of Birth</label>
+          <input type="date" value="2000-04-20" min="1900-01-01" max="2010-12-31" name="birth" id="birth">
+          <label for="telephone-number-user">Telephone Number </label>
+          <input type="text" inputmode="tel" name="telephone" id="telephone" placeholder="+ 0123 / 0000000">
+        </fieldset>
+        <!-- Plan -->
+        <fieldset>
+          <legend>
+            <strong>
+              <h2>Subscription</h2>
+            </strong>
+          </legend>
+          <label for="plan">
+            <strong>Choose Your Plan</strong>
+          </label>
+          <br>
+          <select id="plan" name="plan" required>
+            <optgroup label="Free">
+              <option value="0">Standard (Free)</option>
+            </optgroup>
+            <optgroup label="Paid">
+              <option value="10">1 Month (10$)</option>
+              <option value="50">6 Month (50$)</option>
+              <option value="100">12 Month (100$)</option>
+            </optgroup>
+          </select>
+          <div>
+            <label for="PRO">
+              <i> Include PRO Benefits</i> (+15$) </label>
+            <input type="checkbox" name="PRO" id="PRO" checked />
+          </div>
+          </div>
+        </fieldset>
+        <div>
+          <!-- Credit Card -->
+          <fieldset>
+            <legend>
+              <strong>
+                <h2> Enter Credit Card Information</h2>
+              </strong>
+            </legend>
+            <label for="card">Card Number</label>
+            <input type="number" name="card" id="card" minlength="13" maxlength="19" placeholder="1234/1234/1234/1234" />
+            <label for="cvc">CVC</label>
+            <input type="password" name="cvc" id="cvc" maxlength="3" placeholder="123" />
+            <label for="expiration">Expiration</label>
+            <input type="date" name="expiration" id="expiration" value="2022-05-01" min="2022-05-01"  />
+            <hr>
+            <!-- Address -->
+            <p>
+              <strong>Billing Address</strong>
+            </p>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address-user" />
+            <label for="postal">Postcode</label>
+            <input type="text" name="postal" id="postal" />
+            <label for="submit_button"></label>
+            <input type="submit" value="Submit" id="submit-button" name="submit-button" />
+          </fieldset>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
